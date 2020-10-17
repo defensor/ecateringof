@@ -7,6 +7,14 @@ $(document).ready(function () {
     }, 1000)
   });
 
+  $(".description a").click(function () {
+    $("body,html").animate({
+      scrollTop: $("#" + $(this).data('value')).offset().top
+    }, 1000
+    )
+  })
+
+
 
   ymaps.ready(init);
 
@@ -67,5 +75,9 @@ $(document).ready(function () {
     myMap.geoObjects.add(castlePoint);
   }
 
+  let topPosition = $("#before").position().top;
+  let leftPosition = $("#before").position().left;
+
+  $(".before .overlay").css({ top: topPosition, left: leftPosition })
 
 })

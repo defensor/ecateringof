@@ -26,14 +26,13 @@ body {
 
 /* Header */
 .header{
-  /* background-image: url('../images/headerback.jpg'); */
   background-image: url('../images/ecateringof.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
 }
 
-.overlay{
+.header .overlay{
   position:absolute;
   min-height: 100%;
   min-width: 100%;
@@ -42,7 +41,7 @@ body {
   background: rgba(244, 244, 244, 0.8);
 }
 
-.description{
+.header .description{
   position: absolute;
   top: 30%;
   margin: auto;
@@ -50,14 +49,14 @@ body {
 }
 
 
-.description p{
+.header .description p{
   color: #666;
   font-size: 20px;
   width: 60%;
   line-height: 1.5;
 }
 
-.description button{
+.header .description a{
   border: 1px solid #036919;
   background: #036919;
   color: #fff;
@@ -120,8 +119,14 @@ h1{
   padding: 2em;
 }
 .history h1{
-  margin: 2em;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
 }
+
+.history img{
+  margin-top: 2em;
+}
+
 .before{
   margin: 4em 0;
   padding: 2em;
@@ -129,12 +134,57 @@ h1{
 .before h1{
   margin: 2em;
 }
+
+.before .row{
+  min-height: 70vh;
+}
+
+.before{
+  background-image: url('../images/now_fundament.jpg');
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.before .overlay{
+  position: absolute;
+  min-height: 100vh;
+  min-width: 100%;
+  background: rgba(244, 244, 244, 0.8);
+}
+
+.before .description{
+  position: absolute;
+  margin: auto;
+  padding: 2em;
+}
+
+.before .description h1{
+  margin: 2em;
+  margin-left: 30%;
+}
+
+
+.before .description p{
+  margin-left: 10%;
+  color: #666;
+  font-size: 20px;
+  width: 60%;
+  line-height: 1.5;
+}
+
 .after{
   margin: 4em 0;
   padding: 2em;
 }
 .after h1{
   margin: 2em;
+}
+.after img{
+  width: 40vh;
+  height: 30vh;
 }
 
 
@@ -148,17 +198,17 @@ h1{
   padding: 2em 1px;
 }
 
-.contact-form .right{
+.contact-form form{
   max-width: 600px;
 }
 
-.contact-form .right .btn-secondary{
+.contact-form .btn-secondary{
   background: #036919;
   color: #fff;
   border: 0;
 }
 
-.contact-form .right .form-control::placeholder{
+.contact-form .form-control::placeholder{
   color: #888;
   font-size: 16px;
 }

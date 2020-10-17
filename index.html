@@ -57,7 +57,7 @@
         <h1>Благоустройство Екатерингофского парка
           <p>Проект по организации креативного пространства в северо-западной части парка и облагораживанию прилежащей
             территории</p>
-          <button class="btn btn-outline-secondary btn-lg">Подробнее</button>
+          <a class="btn btn-outline-secondary btn-lg" data-value="about" href="#">Подробнее</a>
         </h1>
       </div>
     </div>
@@ -137,7 +137,7 @@
           давних временах. А ведь этот парк – едва ли не ровесник города… На сегодняшний день судьба парка остается
           открытой…
         </p>
-        <img src="images/history_castle.jpg" class="col-8 m-auto" id="castle">
+        <img src="images/history_castle.jpg" class="col-8 mx-auto" id="castle">
       </div>
     </div>
   </div>
@@ -145,45 +145,49 @@
 
   <!-- before -->
   <div class="before" id="before">
+    <div class="overlay"></div>
     <div class="container">
-      <h1>Парк сейчас</h1>
-
+      <div class="description">
+        <h1>Парк сейчас</h1>
+        <p>Сейчас северо-западная часть парка переживает не лучшие времена - фундамент пустует, поблизости нет ни урн,
+          ни
+          лавочек, ни освещения.</p>
+      </div>
     </div>
+  </div>
   </div>
 
 
   <!-- after -->
   <div class="after" id="after">
+    <div class="overlay"></div>
     <div class="container">
-      <h1>Наши планы</h1>
-
+      <div class="description">
+        <h1>Наши планы</h1>
+        <p></p>
+      </div>
     </div>
+  </div>
   </div>
 
 
   <!-- Contact form -->
   <div class="contact-form" id="contact">
-    <div class="container d-flex">
+    <div class="container">
+      <h1 class="text-center">Связаться с нами</h1>
       <form class="m-auto">
-        <div class="row">
-          <div class="col-lg-5 col-md-5 col-sm-12">
-            <h1>Связаться с нами</h1>
-          </div>
-          <div class="col-lg-7 col-md-7 col-sm-12 right">
-            <div class="form-group">
-              <input type="text" class="form-control form-control-lg" placeholder="Your Name" name="">
-            </div>
-            <div class="form-group">
-              <input type="email" class="form-control form-control-lg" placeholder="YourEmail@email.com" name="email">
-            </div>
-            <div class="form-group">
-              <textarea class="form-control form-control-lg">
+        <div class="form-group">
+          <input type="text" class="form-control form-control-lg" placeholder="Your Name" name="">
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control form-control-lg" placeholder="YourEmail@email.com" name="email">
+        </div>
+        <div class="form-group">
+          <textarea class="form-control form-control-lg">
 
               </textarea>
-            </div>
-            <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
-          </div>
         </div>
+        <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
       </form>
     </div>
   </div>
