@@ -115,16 +115,39 @@ h1{
   height: 70vh;
 }
 .history{
-  margin: 4em 0;
-  padding: 2em;
-}
-.history h1{
-  margin-top: 2em;
-  margin-bottom: 0.5em;
+  background-image: url('../images/history_castle.jpg');
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 
-.history img{
-  margin-top: 2em;
+
+.history .overlay{
+  position: absolute;
+  min-height: 100vh;
+  min-width: 100%;
+  background: rgba(244, 244, 244, 0.8);
+}
+
+.history .description{
+  position: absolute;
+  padding: 2em;
+}
+
+.history .description h1{
+  margin: 2em;
+  margin-bottom: 1em;
+  margin-left: 30%;
+}
+
+
+.history .description p{
+  margin-left: 5%;
+  color: #666;
+  font-size: 20px;
+  width: 70%;
+  line-height: 1.5;
 }
 
 .before{
@@ -133,10 +156,6 @@ h1{
 }
 .before h1{
   margin: 2em;
-}
-
-.before .row{
-  min-height: 70vh;
 }
 
 .before{
@@ -182,11 +201,41 @@ h1{
 .after h1{
   margin: 2em;
 }
-.after img{
-  width: 40vh;
-  height: 30vh;
+
+.after{
+  background-image: url('../images/project.png');
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 
+
+.after .overlay{
+  position: absolute;
+  min-height: 100vh;
+  min-width: 100%;
+  background: rgba(244, 244, 244, 0.8);
+}
+
+.after .description{
+  position: absolute;
+  padding: 2em;
+}
+
+.after .description h1{
+  margin: 2em;
+  margin-left: 30%;
+}
+
+
+.after .description p{
+  margin-left: 10%;
+  color: #666;
+  font-size: 20px;
+  width: 60%;
+  line-height: 1.5;
+}
 
 /* Contact form */
 .contact-form{

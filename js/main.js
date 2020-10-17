@@ -75,9 +75,17 @@ $(document).ready(function () {
     myMap.geoObjects.add(castlePoint);
   }
 
-  let topPosition = $("#before").position().top;
-  let leftPosition = $("#before").position().left;
+  let topPositionB = $("#before").position().top;
+  let leftPositionB = $("#before").position().left;
+  let heightB = $("#before").height() * 1.2
 
-  $(".before .overlay").css({ top: topPosition, left: leftPosition })
+  $(".before .overlay").css({ top: topPositionB, left: leftPositionB })
+  $(".before .overlay").height(heightB);
 
+  let topPositionA = $("#after").position().top;
+  let leftPositionA = $("#after").position().left;
+  let heightA = $("#after").height() * 1.2
+
+  $(".after .overlay").css({ top: topPositionA, left: leftPositionA })
+  $(".after .overlay").height(heightA);
 })
