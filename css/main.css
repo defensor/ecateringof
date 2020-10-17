@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+html, h1, h2, h3, h4, h5, h6, a{
+  font-family: "Raleway";
+}
+
+body {
+  background-color: rgb(244, 244, 244);
+}
+
+.container{
+  min-height: 80vh;
+  min-width: 100vh;
+}
+
+/* Navbar */
+.navbar{ background:#036919;}
+.nav-link, .navbar-brand{color: #f4f4f4; cursor: pointer;}
+.nav-link{ margin-right: 1em !important;}
+.nav-link:hover{background:#f4f4f4; color:#036919;}
+.navbar-collapse{justify-content: flex-end;}
+.navbar-toggler{background:#fff !important;}
+.bg-dark{
+  background-color: #343a40!important;
+}
+
+/* Header */
+.header{
+  /* background-image: url('../images/headerback.jpg'); */
+  background-image: url('../images/ecateringof.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay{
+  position:absolute;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(244, 244, 244, 0.8);
+}
+
+.description{
+  position: absolute;
+  top: 30%;
+  margin: auto;
+  padding: 2em;
+}
+
+
+.description p{
+  color: #666;
+  font-size: 20px;
+  width: 60%;
+  line-height: 1.5;
+}
+
+.description button{
+  border: 1px solid #036919;
+  background: #036919;
+  color: #fff;
+}
+
+/* About */
+.about{
+  margin: auto;
+  margin: 4em 0;
+  padding: 2em;
+  position: relative;
+}
+
+.about h1{
+  margin: 2em;
+}
+
+.about img{
+  height:100%;
+  width: 100%;
+}
+
+.about span{
+  display: block;
+  color: #888;
+}
+
+.about .desc{
+  padding: 2em;
+  border-left: 4px solid #022427;
+}
+
+.about .desc h3{
+  color: #10828C;
+}
+
+.about .desc p{
+  font-size: large;
+  line-height: 2;
+  color: #888;
+}
+
+h1{
+  color: #036919;
+}
+
+.map{
+  margin: 4em 0;
+  padding: 2em;
+}
+.map h1{
+  margin: 2em;
+}
+.map #map-field {
+  width: 100vh;
+  height: 70vh;
+}
+.history{
+  margin: 4em 0;
+  padding: 2em;
+}
+.history h1{
+  margin: 2em;
+}
+.before{
+  margin: 4em 0;
+  padding: 2em;
+}
+.before h1{
+  margin: 2em;
+}
+.after{
+  margin: 4em 0;
+  padding: 2em;
+}
+.after h1{
+  margin: 2em;
+}
+
+
+/* Contact form */
+.contact-form{
+  margin: 6em 0;
+  position: relative;
+}
+
+.contact-form h1{
+  padding: 2em 1px;
+}
+
+.contact-form .right{
+  max-width: 600px;
+}
+
+.contact-form .right .btn-secondary{
+  background: #036919;
+  color: #fff;
+  border: 0;
+}
+
+.contact-form .right .form-control::placeholder{
+  color: #888;
+  font-size: 16px;
+}

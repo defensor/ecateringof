@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+  <script
+    src="https://api-maps.yandex.ru/2.1/?load=package.full&amp;lang=ru-RU&amp;apikey=7e98a3c7-fce3-4724-8c16-c5264724a1c0"
+    type="text/javascript"></script>
+
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top bg-dark">
+    <a class="navbar-brand" data-value="header" href="#">Главная</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-4">
+        <li class="nav-item">
+          <a class="nav-link" data-value="about" href="#">О нас</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-value="map" href="#">Местоположение</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-value="history" href="#">История</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-value="before" href="#">Сейчас</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-value="after" href="#">Планы</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-value="contact" href="#">Связь</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- header -->
+  <header class="header" id="header">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="description">
+        <h1>Благоустройство Екатерингофского парка
+          <p>Проект по организации креативного пространства в северо-западной части парка и облагораживанию прилежащей
+            территории</p>
+          <button class="btn btn-outline-secondary btn-lg">Подробнее</button>
+        </h1>
+      </div>
+    </div>
+  </header>
+
+  <!-- about us -->
+  <div class="about" id="about">
+    <div class="container">
+      <h1 class="text-center">О нас</h1>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <img src="images/itmo-logo.png" class="img-fluid">
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 desc">
+          <p>
+            Мы группа студентов университета ИТМО. Под руководством экспертов разрабатываем проект по благоустройству
+            Екатерингофского парка. Мы хотим привлечь в него жителей Петербурга и сделать Кировский район комфортнее для
+            жизни.
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- map -->
+  <div class="map" id="map">
+    <div class="container">
+      <h1 class="text-center">Местоположение</h1>
+      <div id="map-field" class="m-auto"></div>
+    </div>
+  </div>
+
+
+  <!-- history -->
+  <div class=" history" id="history">
+    <div class="container">
+      <h1 class="text-center">История парка</h1>
+      <div class="row">
+        <p>
+          7 мая 1703 г. считается днем первой победы российского военно-морского флота в Северной войне
+          Спустя восемь лет в Санкт-Петербурге, новой российской столице, «для сей преславной морской баталии, в знак
+          сей победы, недалеко от места сражения, вблизи деревни Калинкиной Петр заложил дворец с садом, назвав усадьбу
+          «Екатерингоф» («двор Екатерины»), он подарил его своей супруге.
+          В 1748 году по распоряжению Елизаветы Петровны состоялась разборка и перенос в Екатерингоф старого Летнего
+          дома, принадлежавшего Анне Иоанновне.
+          В 1749-1750-х гг была завершена внутренняя отделка помещений ванн Болесом.
+        </p>
+
+        <p>
+          1826 г. - дворец в Екатерингофе вновь был принят в ведение гоф-интендантской конторы. Во время
+          реставрационных работ 1820-х гг. фасады были расчищены от более поздних наслоений, дворец приобрел
+          привлекательный вид.
+        </p>
+
+        <p>
+          В конце XIX в. вместе с запустением усадьбы, дворец также приходит в упадок и требует ремонта.
+          В 1907 г. все предметы обстановки Екатерингофского дворца были перенесены в Зимний дворец. С тех пор
+          петровский дворец пустовал.
+        </p>
+
+        <p>
+          6 июня 1923 г., 27 октября 1925 г. случилась серия пожаров, которые успели нанести зданию значительный ущерб.
+          1922-1926 года Дворец передают из рук в руки. (От Главного управления научными, художественными и музейными
+          учреждениями Академического центра (Главнаука) к Главнауки к Губоткомхозу, затем к обществу «Старый
+          Петербург»), cнова к Главнауке.
+        </p>
+
+        <p>
+          В июне 1926 г. был заключен договор о продаже здания на слом. Крестьянин Сорокин, уплатив семьсот рублей,
+          обязался за свой счет и своими средствами произвести сломку здания и фундамента, «полученный от сломки
+          материал и мусор убрать, а место постройки спланировать и утрамбовать». Что он и сделал в течение месяца.
+        </p>
+
+        <p>
+          Сегодня в парке «Екатерингоф», еще совсем недавно носившем название 30-летия ВЛКСМ, ничего не напоминает о
+          давних временах. А ведь этот парк – едва ли не ровесник города… На сегодняшний день судьба парка остается
+          открытой…
+        </p>
+        <img src="images/history_castle.jpg" class="col-8 m-auto" id="castle">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- before -->
+  <div class="before" id="before">
+    <div class="container">
+      <h1>Парк сейчас</h1>
+
+    </div>
+  </div>
+
+
+  <!-- after -->
+  <div class="after" id="after">
+    <div class="container">
+      <h1>Наши планы</h1>
+
+    </div>
+  </div>
+
+
+  <!-- Contact form -->
+  <div class="contact-form" id="contact">
+    <div class="container d-flex">
+      <form class="m-auto">
+        <div class="row">
+          <div class="col-lg-5 col-md-5 col-sm-12">
+            <h1>Связаться с нами</h1>
+          </div>
+          <div class="col-lg-7 col-md-7 col-sm-12 right">
+            <div class="form-group">
+              <input type="text" class="form-control form-control-lg" placeholder="Your Name" name="">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control form-control-lg" placeholder="YourEmail@email.com" name="email">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control form-control-lg">
+
+              </textarea>
+            </div>
+            <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
